@@ -2,7 +2,10 @@
   <title>List of Students</title>
   <body>
     <h1>All Students</h1>
+    <% i = 1 %>
     <% @stundets.each do |student| %>
-    <p><%= %></p>
+    <p><%= "#{i}. #{student}" %></p>
+    <% i += 1 %>
+    <% end %>
   </body>
 </html>
