@@ -4,6 +4,6 @@ class StudentController < ApplicationController
   end
   
   def index
-    @students = Stunde
+    @students = Stundent.all
   end
 end
